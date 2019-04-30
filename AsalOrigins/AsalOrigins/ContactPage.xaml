@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.ContactPage" Title="Contact Us">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="5">
+                <Label Text="Fore more information" 
+                       FontSize="22"
+                       TextColor="#009688"/>
+                <StackLayout 
+                        Orientation="Vertical"
+                        Padding="0"
+                        Margin="10"
+                        VerticalOptions="Start" HorizontalOptions="Start">
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="0"
+                                 VerticalOptions="Start" 
+                                 HorizontalOptions="Start">
+                        <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#EAF2F8"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="50"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                            <StackLayout Padding="5">
+                                <Image  WidthRequest="30"
+                                    HeightRequest="30"
+                                    Aspect="Fill"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/phone.png"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="+252906214499" 
+                               FontSize="21"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               TextDecorations="Underline"
+                               TextColor="#19339B"
+                               />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="0"
+                                 VerticalOptions="Start" 
+                                 HorizontalOptions="Start">
+                        <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#EAF2F8"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="50"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                            <StackLayout Padding="5">
+                                <Image  WidthRequest="30"
+                                    HeightRequest="30"
+                                    Aspect="Fill"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/email.png"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="info@asal-origin.org" 
+                               FontSize="21"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               TextDecorations="Underline"
+                               TextColor="#19339B"
+                               />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="0"
+                                 VerticalOptions="Start" 
+                                 HorizontalOptions="Start">
+                        <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#EAF2F8"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="50"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                            <StackLayout Padding="5">
+                                <Image  WidthRequest="30"
+                                    HeightRequest="30"
+                                    Aspect="Fill"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/location.png"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Garowe, Puntland, Somalia" 
+                               FontSize="21"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               
+                               TextColor="#19339B"
+                               />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="0"
+                                 VerticalOptions="Start" 
+                                 HorizontalOptions="Start">
+                        <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#EAF2F8"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="50"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                            <StackLayout Padding="5">
+                                <Image  WidthRequest="30"
+                                    HeightRequest="30"
+                                    Aspect="Fill"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/website.png"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="http://www.asal-origin.org" 
+                               FontSize="21"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               TextDecorations="Underline"
+                               TextColor="#19339B"
+                               />
+                    </StackLayout>
+
+
+                </StackLayout>
+                <Button Text="Email Us"
+                        Clicked="Emailbtn_Clicked"
+                        FontSize="18"
+                        TextColor="White"
+                        BackgroundColor="Accent"
+                        x:Name="emailbtn"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HeightRequest="50"
+                        WidthRequest="200"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

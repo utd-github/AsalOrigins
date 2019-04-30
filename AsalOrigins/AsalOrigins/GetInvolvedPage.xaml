@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.GetInvolvedPage" Title="Get Involved">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="5">
+                <Label Text="To Get involved"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+                <Label FontSize="18" 
+                       VerticalTextAlignment="Start" 
+                       Text="It is clear that the local community is hungry for the unique services that we are offering. This is reflected in the high volume of current students and those who want to be enrolled. However, our current lack of income, funding or support is proving to have a detrimental effect as we are unable to accommodate all the students participating in our classes. Our resources are currently limited, this has led to the volunteering teachers being unable to provide the best possible aid to the students."/>
+                <Label FontSize="18" 
+                       VerticalTextAlignment="Start" 
+                       Text="Community Spirit has been the foundation of Asal Origin's efforts as well as the support from those who share our vision. We ask you to kindly join and contribute towards this cause."/>
+                
+                <Label Text="To Donate"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+
+                <Label Text="SAHAL: 490214" FontSize="18" />
+                <Label Text="Asal Origin Account: AMAL BANK 1012254884" FontSize="18" />
+
+                
+                <Label FontSize="18" 
+                       VerticalTextAlignment="Start"
+                       Text="All contributions are very much appreciated."/>
+                
+                <Label Text="To volunteer"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+                <Button Text="Volunteer Now"
+                        Clicked="Volbtn_Clicked"
+                        FontSize="18"
+                        TextColor="White"
+                        BackgroundColor="Accent"
+                        x:Name="volbtn"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HeightRequest="50"
+                        WidthRequest="200"/>
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.ServicesPage" Title="Our Services">
+    <ContentPage.Content>
+        <StackLayout Padding="5,10,5,5">
+            <Label  FontSize="25" 
+                    TextColor="#009688"
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="What We do"/>
+
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="The centre has created three pathways for the local youth:"/>
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="> Education: The centre runs morning and afternoon lessons on the following subjects; Languages such as ; Somali, Arabic, English as well as Quran, Maths. The lessons ranging from beginners to advanced levels are available to students run by volunteer teachers."/>
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="> Vocational Skills: The students are offered a variety of vocational courses which include sewing, henna, arts and planting. Other courses such as electrical wiring, plumbing and IT will begin in the foreseeable future." />
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                Text="We have designed personalised learning packages to ensure that our students are well-equipped when entering the work force." />
+
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="> Environment: The centre encourages it users to participate in our Greening the City movement, this is where we walk around the city collecting materials such as plastic bottles, tyres and dryer tubes that could be recycled into decorative plant pots. This initiative not only reduces litter within the city but also increases the number of plants grown and subsequently decreases visual and environmental pollution."/>
+
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="> Children's activities: KAABE is a children's life skill building program run every Friday at Asal Community Centre. It is aimed at children between the ages of 4 to 12 years of age. There are multiple engaging activities run for the children such as colouring, story telling, creative writing, planting and confidence building sessions. The children are also taught to read and write in their mother tongue as a means to connect the younger generations to their heritage." />
+
+            <Label FontSize="18" 
+                    LineBreakMode="WordWrap"
+                    VerticalTextAlignment="Start" 
+                    Text="In keeping with our eco-friendly ethos, ASAL Community Centre was furbished using recycled materials such as old tires, vehicle parts and plastic bottles. This approach sets us apart as it showcases our innovation and dedication to the work that we carry out." />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

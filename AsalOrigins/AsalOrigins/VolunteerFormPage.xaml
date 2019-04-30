@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.VolunteerFormPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Volunteer Form"
+                   FontSize="50"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="#009688"/>
+            <Entry Placeholder="Email"
+                   x:Name="emailtxt"
+                   FontSize="18"
+                   Margin="10"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HeightRequest="50"
+                   WidthRequest="300"/>
+            <Entry Placeholder="Phone Number"
+                   x:Name="phonetxt"
+                   FontSize="18"
+                   Margin="10"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HeightRequest="50"
+                   WidthRequest="300"/>
+            <Editor Placeholder="Bio"
+                   x:Name="bodytxt"
+                   FontSize="18"
+                   Margin="10"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HeightRequest="250"
+                   WidthRequest="300"/>
+
+            <Button Text="Submit"
+                        Clicked="Submit_Clicked"
+                        FontSize="18"
+                        TextColor="White"
+                        BackgroundColor="Accent"
+                        x:Name="submit"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HeightRequest="50"
+                        WidthRequest="200"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

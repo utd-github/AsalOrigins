@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.HomePage" 
+             Title="Home"
+             >
+    <ContentPage.Content >
+        <ScrollView >
+            <StackLayout Padding="5">
+                    <Label Text="Welcome"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       Text="We are a non-governmental and nonprofit organization founded as independent youth development platform with the intention to empower and reconnect young people through their culture, heritage and arts. Asal Community Centre was opened with the aim to create opportunities for disadvantaged youth in the hopes of them becoming financially independent. We provide a safe and creative environment for young people to help them develop employability skills."/>
+                    <Label Text="We Provide"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+                <StackLayout 
+                        Orientation="Horizontal"
+                        Padding="0"
+                        Margin="10"
+                        VerticalOptions="Center" HorizontalOptions="Center">
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#BA4A00"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/education.png"/>
+                                <Label FontSize="20"
+                                       TextColor="White"
+                                       Text="Education"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                        </Frame>
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#D1C4C4"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/skills.png"/>
+                            <Label     FontSize="20"
+                                       TextColor="White"
+                                       Text="Skills"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#00897B"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/children.png"/>
+                            <Label     FontSize="20"
+                                       TextColor="White"
+                                       Text="Activities"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout 
+                        Orientation="Horizontal"
+                        Padding="0"
+                        Margin="10"
+                        VerticalOptions="Center" HorizontalOptions="Center">
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#83A2F3"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/nature.png"/>
+                            <Label FontSize="20"
+                                       TextColor="White"
+                                       Text="Agriculture"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#64B5F6"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/tailoring.png"/>
+                            <Label     FontSize="20"
+                                       TextColor="White"
+                                       Text="Tailoring"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                    </Frame>
+                    <Frame  BorderColor="#FFFFFF"
+                            BackgroundColor="#BB8FCE"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            Margin="0"
+                            Padding="0">
+                        <StackLayout Padding="5">
+                            <Image     WidthRequest="110"
+                                       HeightRequest="120"
+                                       Aspect="Fill"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Source="Assets/training.png"/>
+                            <Label     FontSize="20"
+                                       TextColor="White"
+                                       Text="Trainings"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                      />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+
+
+            </StackLayout>
+                
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

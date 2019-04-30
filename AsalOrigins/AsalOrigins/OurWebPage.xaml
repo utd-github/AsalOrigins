@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.OurWebPage" Title="Our Website">
+    <ContentPage.Content>
+        <Grid Padding="0" Margin="0">
+            <ActivityIndicator x:Name="loadingRing" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center"
+                               WidthRequest="100" HeightRequest="100"   />
+            <WebView x:Name="Webview" IsVisible="False" Source="http://www.asal-origin.org" WidthRequest="500" HeightRequest="800"
+                Navigated="WebView_Navigated" Navigating="WebView_Navigating"
+                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

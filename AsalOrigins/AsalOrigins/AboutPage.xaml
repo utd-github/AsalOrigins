@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsalOrigins.AboutPage" Title="About Us">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout>
+                <Grid HeightRequest="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" 
+                           Grid.RowSpan="2"
+                           Aspect="Fill" 
+                           Source="Assets/asalbg.png" />
+                    <Label Grid.Row="1" 
+                           Text="Asal Origin"
+                           BackgroundColor="#99FFFFFF"
+                           FontSize="40"
+                           TextColor="#009688"
+                           HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center"/>
+                </Grid>
+                <StackLayout Padding="5">
+                    <Label Font="18" 
+                           LineBreakMode="WordWrap"
+                       VerticalTextAlignment="Start" 
+                       Text="Asal Community Centre was opened with the aim to create opportunities for disadvantaged youth in the hopes of them becoming financially independent. We provide a safe and creative environment for young people to help them develop employability skills."/>
+                    <Label Text="OUR MISSION"
+                       TextColor="#009688"
+                       FontSize="25"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                           LineBreakMode="WordWrap"
+                       VerticalTextAlignment="Start" 
+                       Text="Our mission is to create a supportive environment for young people where they can thrive, unlock their potential and develop employability skills. Our social development projects will enable young people to develop unique hands-on experiences and entrepreneurship skills."/>
+                    <Label Text="OUR VISION"
+                       FontSize="25"
+                       TextColor="#009688"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                           LineBreakMode="WordWrap"
+                       VerticalTextAlignment="Start" 
+                       Text="Our vision is to showcase the various opportunities for development that can be found in our country, as we intend to instill within the youth a deep appreciation of their motherland."/>
+                    <Label Text="OUR METHODOLOGY"
+                       FontSize="25"
+                       TextColor="#009688"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="ASAL-ORIGIN have adopted 'share it with me' (SIWM) methodology to encourage young people to learn from each other's experiences, personal stories, struggles and motivations as well as learning from other subject matter experts. ASAL-ORIGIN developed this methodology to enable young people in the diaspora to share their stories and experiences living abroad with their counterparts in Somalia and vice versa. This will help young people."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> To avoid risking their lives sgoing to abroad through taking drastic measures to put their lives in danger"/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> To be more encouraged to stay, work and study their country without pursuing dreams elsewhere."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> Young people from the diaspora the to learn their culture, music, arts and reconnect their heritage."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> To engage constructive dialogue with others to challenge harmful practices and clannish ideologies."/>
+
+                    <Label Text="COMMITMENT"
+                       FontSize="25"
+                       TextColor="#009688"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="Asal Origin will continue to encourage and demonstrate the change needed now for tomorrow by upholding our promise to our youth, as well as working with the wider community in helping us achieve this. Asal Origin will continue to empower our youth through various workshops, classes, cultural exposure and social events."/>
+                    <Label Text="OUR AIMS and OBJECTIVES"
+                       FontSize="25"
+                       TextColor="#009688"
+                       VerticalTextAlignment="Start" />
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> Providing our service users with the tools to eventually become financially independent and fully integrated members of society."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> Ensure that our students are as well-equipped as possible when entering the work force using the personalised learning packages that we've designed."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> Encourage the young people to take part in our Greening the City movement."/>
+                    <Label Font="18" 
+                       VerticalTextAlignment="Start" 
+                       LineBreakMode="WordWrap"
+                       Text="> To inspire those we work with to also adopt an eco-friendly lifestyle as we believe that we all have a duty in preserving the beauty of our homeland."/>
+
+
+
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

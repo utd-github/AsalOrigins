@@ -1,14 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AsalOrigins"
-             x:Class="AsalOrigins.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
-</ContentPage>
+                  xmlns:localM="clr-namespace:AsalOrigins.Models"
+                  x:Class="AsalOrigins.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="0,15,0,0">
+                    <Image
+                       Source="Assets/icon.png"                       
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+                    <Label Text="Asal Origin" 
+                           Margin="10"
+                           FontSize="25"
+                           TextColor="#AEB6BF"
+                           HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout >
+                    <ListView x:Name="MenuItemList" x:FieldModifier="public" ItemSelected="ListView_ItemSelected">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type localM:MasterDetailListItem}">
+                                <localM:MasterDetailListItem Title="Home" IconSource="Assets/home.png" TargetType="{x:Type local:HomePage}" />
+                                <localM:MasterDetailListItem Title="Our Services" IconSource="Assets/services.png" TargetType="{x:Type local:ServicesPage}" />
+                                <localM:MasterDetailListItem Title="Our Stats" IconSource="Assets/stats.png" TargetType="{x:Type local:OurStatsPage}"/>
+                                <localM:MasterDetailListItem Title="Get Involved" IconSource="Assets/help.png" TargetType="{x:Type local:GetInvolvedPage}"/>
+                                <localM:MasterDetailListItem Title="Visit Our Website" IconSource="Assets/website.png" TargetType="{x:Type local:OurWebPage}" />
+                                <localM:MasterDetailListItem Title="About Us" IconSource="Assets/about.png" TargetType="{x:Type local:AboutPage}" />
+                                <localM:MasterDetailListItem Title="Contact Us" IconSource="Assets/contactus.png" TargetType="{x:Type local:ContactPage}"/>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="5,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding IconSource}" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="18"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+    <MasterDetailPage.Detail>
+        <NavigationPage BarBackgroundColor="#455A64" BarTextColor="White">
+            <x:Arguments>
+                <local:HomePage/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
