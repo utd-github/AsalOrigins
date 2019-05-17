@@ -1,51 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AsalOrigins.VolunteerFormPage">
+<ContentPage
+    x:Class="AsalOrigins.VolunteerFormPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Volunteer Now">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Clicked="Submit_Clicked"
+            Order="Primary"
+            Text="Submit" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Volunteer Form"
-                   FontSize="50"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   TextColor="#009688"/>
-            <Entry Placeholder="Email"
-                   x:Name="emailtxt"
-                   FontSize="18"
-                   Margin="10"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   HeightRequest="50"
-                   WidthRequest="300"/>
-            <Entry Placeholder="Phone Number"
-                   x:Name="phonetxt"
-                   FontSize="18"
-                   Margin="10"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   HeightRequest="50"
-                   WidthRequest="300"/>
-            <Editor Placeholder="Bio"
-                   x:Name="bodytxt"
-                   FontSize="18"
-                   Margin="10"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   HeightRequest="250"
-                   WidthRequest="300"/>
 
-            <Button Text="Submit"
-                        Clicked="Submit_Clicked"
-                        FontSize="18"
-                        TextColor="White"
-                        BackgroundColor="Accent"
-                        x:Name="submit"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        HeightRequest="50"
-                        WidthRequest="200"/>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <Entry
+                    x:Name="fnametxt"
+                    Margin="10"
+                    FontSize="18"
+                    
+                    HorizontalOptions="Center"
+                    Placeholder="Full name"
+                    VerticalOptions="Center"
+                    WidthRequest="350" />
+                <Entry
+                    x:Name="emailtxt"
+                    Margin="10"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    Placeholder="Email"
+                    VerticalOptions="Center"
+                    WidthRequest="350" />
+                <Entry
+                    x:Name="phonetxt"
+                    Margin="10"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    Placeholder="Phone Number"
+                    VerticalOptions="Center"
+                    WidthRequest="350" />
+                <Editor
+                    x:Name="bodytxt"
+                    Margin="10"
+                    FontSize="18"
+                    HeightRequest="250"
+                    HorizontalOptions="Center"
+                    Placeholder="Bio"
+                    VerticalOptions="Center"
+                    WidthRequest="350" />
 
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 </ContentPage>

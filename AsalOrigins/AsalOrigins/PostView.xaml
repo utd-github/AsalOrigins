@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AsalOrigins.PostView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="MainPageContent">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="savebtn"
+            Clicked="Savebtn_Clicked"
+            Order="Primary"
+            Text="Save" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="0">
+            <ActivityIndicator
+                x:Name="loadingRing"
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="100" />
+            <WebView
+                x:Name="browser"
+                HeightRequest="800"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,35 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:AsalOrigins"
-                  xmlns:localM="clr-namespace:AsalOrigins.Models"
-                  x:Class="AsalOrigins.MainPage">
+<MasterDetailPage
+    x:Class="AsalOrigins.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AsalOrigins"
+    xmlns:localM="clr-namespace:AsalOrigins.Models">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <StackLayout >
-                <StackLayout BackgroundColor="#FFFFFF" Padding="0,15,0,0">
+            <StackLayout>
+                <StackLayout Padding="0,15,0,0" BackgroundColor="#FFFFFF">
                     <Image
-                       Source="Assets/icon.png"                       
-                       HeightRequest="100"
-                       WidthRequest="100"/>
-                    <Label Text="Asal Origin" 
-                           Margin="10"
-                           FontSize="25"
-                           TextColor="#AEB6BF"
-                           HorizontalTextAlignment="Center" 
-                           VerticalTextAlignment="Center" />
+                        HeightRequest="100"
+                        Source="Assets/icon.png"
+                        WidthRequest="100" />
+                    <Label
+                        Margin="10"
+                        FontSize="25"
+                        HorizontalTextAlignment="Center"
+                        Text="Asal Origins"
+                        TextColor="#AEB6BF"
+                        VerticalTextAlignment="Center" />
                 </StackLayout>
-                <StackLayout >
-                    <ListView x:Name="MenuItemList" x:FieldModifier="public" ItemSelected="ListView_ItemSelected">
+                <StackLayout>
+                    <ListView
+                        x:Name="MenuItemList"
+                        x:FieldModifier="public"
+                        ItemSelected="ListView_ItemSelected">
                         <ListView.ItemsSource>
                             <x:Array Type="{x:Type localM:MasterDetailListItem}">
-                                <localM:MasterDetailListItem Title="Home" IconSource="Assets/home.png" TargetType="{x:Type local:HomePage}" />
-                                <localM:MasterDetailListItem Title="Our Services" IconSource="Assets/services.png" TargetType="{x:Type local:ServicesPage}" />
-                                <localM:MasterDetailListItem Title="Our Stats" IconSource="Assets/stats.png" TargetType="{x:Type local:OurStatsPage}"/>
-                                <localM:MasterDetailListItem Title="Get Involved" IconSource="Assets/help.png" TargetType="{x:Type local:GetInvolvedPage}"/>
-                                <localM:MasterDetailListItem Title="Visit Our Website" IconSource="Assets/website.png" TargetType="{x:Type local:OurWebPage}" />
-                                <localM:MasterDetailListItem Title="About Us" IconSource="Assets/about.png" TargetType="{x:Type local:AboutPage}" />
-                                <localM:MasterDetailListItem Title="Contact Us" IconSource="Assets/contactus.png" TargetType="{x:Type local:ContactPage}"/>
+
+                                <localM:MasterDetailListItem
+                                    Title="Home"
+                                    IconSource="Assets/home.png"
+                                    TargetType="{x:Type local:HomePage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="Saved Articles"
+                                    IconSource="Assets/save.png"
+                                    TargetType="{x:Type local:SavedArticlesPage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="Get Involved"
+                                    IconSource="Assets/help.png"
+                                    TargetType="{x:Type local:GetInvolvedPage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="Donate"
+                                    IconSource="Assets/donate.png"
+                                    TargetType="{x:Type local:DonatePage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="Visit Our Website"
+                                    IconSource="Assets/website.png"
+                                    TargetType="{x:Type local:OurWebPage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="About Us"
+                                    IconSource="Assets/about.png"
+                                    TargetType="{x:Type local:AboutPage}" />
+
+                                <localM:MasterDetailListItem
+                                    Title="Contact Us"
+                                    IconSource="Assets/contactus.png"
+                                    TargetType="{x:Type local:ContactPage}" />
                             </x:Array>
                         </ListView.ItemsSource>
                         <ListView.ItemTemplate>
@@ -37,11 +70,16 @@
                                 <ViewCell>
                                     <Grid Padding="5,10">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="30" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <Image Source="{Binding IconSource}" />
-                                        <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="18"/>
+                                        <Label
+                                            Grid.Column="1"
+                                            FontSize="18"
+                                            Text="{Binding Title}"
+                                            TextColor="{Binding TextColor}"
+                                            VerticalTextAlignment="Center" />
                                     </Grid>
                                 </ViewCell>
                             </DataTemplate>
@@ -51,11 +89,11 @@
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
-    
+
     <MasterDetailPage.Detail>
         <NavigationPage BarBackgroundColor="#455A64" BarTextColor="White">
             <x:Arguments>
-                <local:HomePage/>
+                <local:HomePage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

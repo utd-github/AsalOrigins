@@ -10,13 +10,13 @@ using Xamarin.Forms.Xaml;
 
 namespace AsalOrigins
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class VolunteerFormPage : ContentPage
-	{
-		public VolunteerFormPage ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class VolunteerFormPage : ContentPage
+    {
+        public VolunteerFormPage()
+        {
+            InitializeComponent();
+        }
 
         private async void Submit_Clicked(object sender, EventArgs e)
         {
@@ -28,8 +28,12 @@ namespace AsalOrigins
 
                 mail.From = new MailAddress(emailtxt.Text);
                 mail.To.Add("mohaaosman13@gmail.com");
-                mail.Subject = "Volunteer Submit: "+phonetxt.Text;
-                mail.Body = "Bio: " + bodytxt.Text;
+                mail.Subject = "Volunteer Submit: " + fnametxt.Text;
+                mail.Body = "<b>Name</b>: " + fnametxt.Text
+                    + " <br>"
+                    + "<b>Phone</b>: " + phonetxt.Text
+                    + " <br>"
+                    + " <b>Bio</b>: " + bodytxt.Text;
 
                 SmtpServer.Port = 587;
                 SmtpServer.Host = "smtp.gmail.com";
@@ -42,11 +46,11 @@ namespace AsalOrigins
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Faild", ex.Message, "OK");
+                await DisplayAlert("Failed", ex.Message, "OK");
             }
             finally
             {
-                await DisplayAlert("Email sent", "Thank you for contacting us, we'll reply soon", "OK");
+                await DisplayAlert("Email sent", "Thank you for contacting us, we'll be in contact", "OK");
                 await Navigation.PopAsync();
             }
         }

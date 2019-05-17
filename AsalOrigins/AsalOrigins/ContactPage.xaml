@@ -1,147 +1,168 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AsalOrigins.ContactPage" Title="Contact Us">
+<ContentPage
+    x:Class="AsalOrigins.ContactPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Contact Us">
     <ContentPage.Content>
-        <ScrollView >
-            <StackLayout Padding="5">
-                <Label Text="Fore more information" 
-                       FontSize="22"
-                       TextColor="#009688"/>
-                <StackLayout 
-                        Orientation="Vertical"
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="22"
+                    Text="For more information"
+                    TextColor="#009688" />
+                <Label FontSize="18" Text="Contact us on the following or visit us on the location below" />
+                <StackLayout
+                    Margin="10"
+                    Padding="0"
+                    HorizontalOptions="Start"
+                    Orientation="Vertical"
+                    VerticalOptions="Start">
+                    <StackLayout
                         Padding="0"
-                        Margin="10"
-                        VerticalOptions="Start" HorizontalOptions="Start">
-                    <StackLayout Orientation="Horizontal"
-                                 Padding="0"
-                                 VerticalOptions="Start" 
-                                 HorizontalOptions="Start">
-                        <Frame  BorderColor="#FFFFFF"
+                        HorizontalOptions="Start"
+                        Orientation="Horizontal"
+                        VerticalOptions="Start">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
                             BackgroundColor="#EAF2F8"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"
+                            BorderColor="#FFFFFF"
                             CornerRadius="50"
                             HasShadow="True"
-                            Margin="0"
-                            Padding="0">
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
                             <StackLayout Padding="5">
-                                <Image  WidthRequest="30"
-                                    HeightRequest="30"
+                                <Image
                                     Aspect="Fill"
-                                    VerticalOptions="Center"
+                                    HeightRequest="30"
                                     HorizontalOptions="Center"
-                                    Source="Assets/phone.png"/>
+                                    Source="Assets/phone.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
                             </StackLayout>
                         </Frame>
-                        <Label Text="+252906214499" 
-                               FontSize="21"
-                               VerticalTextAlignment="Center"
-                               HorizontalTextAlignment="Center"
-                               TextDecorations="Underline"
-                               TextColor="#19339B"
-                               />
+                        <Label
+                            x:Name="phonetxt"
+                            FontSize="21"
+                            HorizontalTextAlignment="Center"
+                            Text="+252906214499"
+                            TextColor="#19339B"
+                            TextDecorations="Underline"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal"
-                                 Padding="0"
-                                 VerticalOptions="Start" 
-                                 HorizontalOptions="Start">
-                        <Frame  BorderColor="#FFFFFF"
+                    <StackLayout
+                        Padding="0"
+                        HorizontalOptions="Start"
+                        Orientation="Horizontal"
+                        VerticalOptions="Start">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
                             BackgroundColor="#EAF2F8"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"
+                            BorderColor="#FFFFFF"
                             CornerRadius="50"
                             HasShadow="True"
-                            Margin="0"
-                            Padding="0">
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
                             <StackLayout Padding="5">
-                                <Image  WidthRequest="30"
-                                    HeightRequest="30"
+                                <Image
                                     Aspect="Fill"
-                                    VerticalOptions="Center"
+                                    HeightRequest="30"
                                     HorizontalOptions="Center"
-                                    Source="Assets/email.png"/>
+                                    Source="Assets/email.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
                             </StackLayout>
                         </Frame>
-                        <Label Text="info@asal-origin.org" 
-                               FontSize="21"
-                               VerticalTextAlignment="Center"
-                               HorizontalTextAlignment="Center"
-                               TextDecorations="Underline"
-                               TextColor="#19339B"
-                               />
+                        <Label
+                            x:Name="emailtxt"
+                            FontSize="21"
+                            HorizontalTextAlignment="Center"
+                            Text="info@asal-origin.org"
+                            TextColor="#19339B"
+                            TextDecorations="Underline"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal"
-                                 Padding="0"
-                                 VerticalOptions="Start" 
-                                 HorizontalOptions="Start">
-                        <Frame  BorderColor="#FFFFFF"
+                    <StackLayout
+                        Padding="0"
+                        HorizontalOptions="Start"
+                        Orientation="Horizontal"
+                        VerticalOptions="Start">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
                             BackgroundColor="#EAF2F8"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"
+                            BorderColor="#FFFFFF"
                             CornerRadius="50"
                             HasShadow="True"
-                            Margin="0"
-                            Padding="0">
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
                             <StackLayout Padding="5">
-                                <Image  WidthRequest="30"
-                                    HeightRequest="30"
+                                <Image
                                     Aspect="Fill"
-                                    VerticalOptions="Center"
+                                    HeightRequest="30"
                                     HorizontalOptions="Center"
-                                    Source="Assets/location.png"/>
+                                    Source="Assets/location.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
                             </StackLayout>
                         </Frame>
-                        <Label Text="Garowe, Puntland, Somalia" 
-                               FontSize="21"
-                               VerticalTextAlignment="Center"
-                               HorizontalTextAlignment="Center"
-                               
-                               TextColor="#19339B"
-                               />
+                        <Label
+                            x:Name="maptxt"
+                            FontSize="21"
+                            HorizontalTextAlignment="Center"
+                            Text="Garowe, Puntland, Somalia"
+                            TextColor="#19339B"
+                            TextDecorations="Underline"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal"
-                                 Padding="0"
-                                 VerticalOptions="Start" 
-                                 HorizontalOptions="Start">
-                        <Frame  BorderColor="#FFFFFF"
+                    <StackLayout
+                        Padding="0"
+                        HorizontalOptions="Start"
+                        Orientation="Horizontal"
+                        VerticalOptions="Start">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
                             BackgroundColor="#EAF2F8"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"
+                            BorderColor="#FFFFFF"
                             CornerRadius="50"
                             HasShadow="True"
-                            Margin="0"
-                            Padding="0">
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
                             <StackLayout Padding="5">
-                                <Image  WidthRequest="30"
-                                    HeightRequest="30"
+                                <Image
                                     Aspect="Fill"
-                                    VerticalOptions="Center"
+                                    HeightRequest="30"
                                     HorizontalOptions="Center"
-                                    Source="Assets/website.png"/>
+                                    Source="Assets/website.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
                             </StackLayout>
                         </Frame>
-                        <Label Text="http://www.asal-origin.org" 
-                               FontSize="21"
-                               VerticalTextAlignment="Center"
-                               HorizontalTextAlignment="Center"
-                               TextDecorations="Underline"
-                               TextColor="#19339B"
-                               />
+                        <Label
+                            x:Name="websitetxt"
+                            FontSize="21"
+                            HorizontalTextAlignment="Center"
+                            Text="http://www.asal-origin.org"
+                            TextColor="#19339B"
+                            TextDecorations="Underline"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
-
-
                 </StackLayout>
-                <Button Text="Email Us"
-                        Clicked="Emailbtn_Clicked"
-                        FontSize="18"
-                        TextColor="White"
-                        BackgroundColor="Accent"
-                        x:Name="emailbtn"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        HeightRequest="50"
-                        WidthRequest="200"/>
+                <Button
+                    x:Name="emailbtn"
+                    BackgroundColor="Accent"
+                    Clicked="Emailbtn_Clicked"
+                    FontSize="18"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    Text="Email Us"
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    WidthRequest="200" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

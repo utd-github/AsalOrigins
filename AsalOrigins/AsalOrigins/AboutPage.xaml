@@ -1,108 +1,342 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AsalOrigins.AboutPage" Title="About Us">
-    <ContentPage.Content>
-        <ScrollView >
-            <StackLayout>
-                <Grid HeightRequest="300">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="80*"/>
-                        <RowDefinition Height="20*"/>
-                    </Grid.RowDefinitions>
-                    <Image Grid.Row="0" 
-                           Grid.RowSpan="2"
-                           Aspect="Fill" 
-                           Source="Assets/asalbg.png" />
-                    <Label Grid.Row="1" 
-                           Text="Asal Origin"
-                           BackgroundColor="#99FFFFFF"
-                           FontSize="40"
-                           TextColor="#009688"
-                           HorizontalTextAlignment="Center" 
-                           VerticalTextAlignment="Center"/>
-                </Grid>
+<TabbedPage
+    x:Class="AsalOrigins.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="About Us">
+    <TabbedPage.Children>
+
+        <ContentPage Title="Who we are">
+            <ScrollView>
+                <StackLayout>
+                    <Grid HeightRequest="300">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80*" />
+                            <RowDefinition Height="20*" />
+                        </Grid.RowDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Grid.RowSpan="2"
+                            Aspect="Fill"
+                            Source="Assets/asalbg.png" />
+                        <Label
+                            Grid.Row="1"
+                            BackgroundColor="#99FFFFFF"
+                            FontSize="40"
+                            HorizontalTextAlignment="Center"
+                            Text="Asal Origin"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Center" />
+                    </Grid>
+                    <StackLayout Padding="10">
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="Asal Community Centre was opened with the aim to create opportunities for disadvantaged youth in the hopes of them becoming financially independent. We provide a safe and creative environment for young people to help them develop employability skills."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            FontSize="25"
+                            Text="OUR MISSION"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="Our mission is to create a supportive environment for young people where they can thrive, unlock their potential and develop employability skills. Our social development projects will enable young people to develop unique hands-on experiences and entrepreneurship skills."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            FontSize="25"
+                            Text="OUR VISION"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="Our vision is to showcase the various opportunities for development that can be found in our country, as we intend to instill within the youth a deep appreciation of their motherland."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            FontSize="25"
+                            Text="OUR METHODOLOGY"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="ASAL-ORIGIN have adopted 'share it with me' (SIWM) methodology to encourage young people to learn from each other's experiences, personal stories, struggles and motivations as well as learning from other subject matter experts. ASAL-ORIGIN developed this methodology to enable young people in the diaspora to share their stories and experiences living abroad with their counterparts in Somalia and vice versa. This will help young people."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; To avoid risking their lives sgoing to abroad through taking drastic measures to put their lives in danger"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; To be more encouraged to stay, work and study their country without pursuing dreams elsewhere."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; Young people from the diaspora the to learn their culture, music, arts and reconnect their heritage."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; To engage constructive dialogue with others to challenge harmful practices and clannish ideologies."
+                            VerticalTextAlignment="Start" />
+
+                        <Label
+                            FontSize="25"
+                            Text="COMMITMENT"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="Asal Origin will continue to encourage and demonstrate the change needed now for tomorrow by upholding our promise to our youth, as well as working with the wider community in helping us achieve this. Asal Origin will continue to empower our youth through various workshops, classes, cultural exposure and social events."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            FontSize="25"
+                            Text="OUR AIMS and OBJECTIVES"
+                            TextColor="#009688"
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; Providing our service users with the tools to eventually become financially independent and fully integrated members of society."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; Ensure that our students are as well-equipped as possible when entering the work force using the personalised learning packages that we've designed."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; Encourage the young people to take part in our Greening the City movement."
+                            VerticalTextAlignment="Start" />
+                        <Label
+                            Font="18"
+                            LineBreakMode="WordWrap"
+                            Text="&gt; To inspire those we work with to also adopt an eco-friendly lifestyle as we believe that we all have a duty in preserving the beauty of our homeland."
+                            VerticalTextAlignment="Start" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+
+        <ContentPage Title="What we do">
+            <ScrollView Padding="10">
+                <StackLayout Padding="5,10,5,5">
+                    <Label
+                        FontSize="25"
+                        LineBreakMode="WordWrap"
+                        Text="What We do"
+                        TextColor="#009688"
+                        VerticalTextAlignment="Start" />
+
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="The centre has created three pathways for the local youth:"
+                        VerticalTextAlignment="Start" />
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="&gt; Education: The centre runs morning and afternoon lessons on the following subjects; Languages such as ; Somali, Arabic, English as well as Quran, Maths. The lessons ranging from beginners to advanced levels are available to students run by volunteer teachers."
+                        VerticalTextAlignment="Start" />
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="&gt; Vocational Skills: The students are offered a variety of vocational courses which include sewing, henna, arts and planting. Other courses such as electrical wiring, plumbing and IT will begin in the foreseeable future."
+                        VerticalTextAlignment="Start" />
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="We have designed personalised learning packages to ensure that our students are well-equipped when entering the work force."
+                        VerticalTextAlignment="Start" />
+
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="&gt; Environment: The centre encourages it users to participate in our Greening the City movement, this is where we walk around the city collecting materials such as plastic bottles, tyres and dryer tubes that could be recycled into decorative plant pots. This initiative not only reduces litter within the city but also increases the number of plants grown and subsequently decreases visual and environmental pollution."
+                        VerticalTextAlignment="Start" />
+
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="&gt; Children's activities: KAABE is a children's life skill building program run every Friday at Asal Community Centre. It is aimed at children between the ages of 4 to 12 years of age. There are multiple engaging activities run for the children such as coloring, story telling, creative writing, planting and confidence building sessions. The children are also taught to read and write in their mother tongue as a means to connect the younger generations to their heritage."
+                        VerticalTextAlignment="Start" />
+
+                    <Label
+                        FontSize="18"
+                        LineBreakMode="WordWrap"
+                        Text="In keeping with our eco-friendly ethos, ASAL Community Centre was furbished using recycled materials such as old tires, vehicle parts and plastic bottles. This approach sets us apart as it showcases our innovation and dedication to the work that we carry out."
+                        VerticalTextAlignment="Start" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+
+        <ContentPage Title="Our Stats">
+            <ScrollView Padding="10">
                 <StackLayout Padding="5">
-                    <Label Font="18" 
-                           LineBreakMode="WordWrap"
-                       VerticalTextAlignment="Start" 
-                       Text="Asal Community Centre was opened with the aim to create opportunities for disadvantaged youth in the hopes of them becoming financially independent. We provide a safe and creative environment for young people to help them develop employability skills."/>
-                    <Label Text="OUR MISSION"
-                       TextColor="#009688"
-                       FontSize="25"
-                       VerticalTextAlignment="Start" />
-                    <Label Font="18" 
-                           LineBreakMode="WordWrap"
-                       VerticalTextAlignment="Start" 
-                       Text="Our mission is to create a supportive environment for young people where they can thrive, unlock their potential and develop employability skills. Our social development projects will enable young people to develop unique hands-on experiences and entrepreneurship skills."/>
-                    <Label Text="OUR VISION"
-                       FontSize="25"
-                       TextColor="#009688"
-                       VerticalTextAlignment="Start" />
-                    <Label Font="18" 
-                           LineBreakMode="WordWrap"
-                       VerticalTextAlignment="Start" 
-                       Text="Our vision is to showcase the various opportunities for development that can be found in our country, as we intend to instill within the youth a deep appreciation of their motherland."/>
-                    <Label Text="OUR METHODOLOGY"
-                       FontSize="25"
-                       TextColor="#009688"
-                       VerticalTextAlignment="Start" />
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="ASAL-ORIGIN have adopted 'share it with me' (SIWM) methodology to encourage young people to learn from each other's experiences, personal stories, struggles and motivations as well as learning from other subject matter experts. ASAL-ORIGIN developed this methodology to enable young people in the diaspora to share their stories and experiences living abroad with their counterparts in Somalia and vice versa. This will help young people."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> To avoid risking their lives sgoing to abroad through taking drastic measures to put their lives in danger"/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> To be more encouraged to stay, work and study their country without pursuing dreams elsewhere."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> Young people from the diaspora the to learn their culture, music, arts and reconnect their heritage."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> To engage constructive dialogue with others to challenge harmful practices and clannish ideologies."/>
+                    <Label
+                        FontSize="25"
+                        Text="How Asal is Changing the Story"
+                        TextColor="#009688"
+                        VerticalTextAlignment="Start" />
+                    <Label
+                        Font="18"
+                        Text="With your support, this is how we changed the story in 2018, And a lot more in motion."
+                        VerticalTextAlignment="Start" />
 
-                    <Label Text="COMMITMENT"
-                       FontSize="25"
-                       TextColor="#009688"
-                       VerticalTextAlignment="Start" />
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="Asal Origin will continue to encourage and demonstrate the change needed now for tomorrow by upholding our promise to our youth, as well as working with the wider community in helping us achieve this. Asal Origin will continue to empower our youth through various workshops, classes, cultural exposure and social events."/>
-                    <Label Text="OUR AIMS and OBJECTIVES"
-                       FontSize="25"
-                       TextColor="#009688"
-                       VerticalTextAlignment="Start" />
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> Providing our service users with the tools to eventually become financially independent and fully integrated members of society."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> Ensure that our students are as well-equipped as possible when entering the work force using the personalised learning packages that we've designed."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> Encourage the young people to take part in our Greening the City movement."/>
-                    <Label Font="18" 
-                       VerticalTextAlignment="Start" 
-                       LineBreakMode="WordWrap"
-                       Text="> To inspire those we work with to also adopt an eco-friendly lifestyle as we believe that we all have a duty in preserving the beauty of our homeland."/>
+                    <StackLayout
+                        Margin="10"
+                        Padding="0"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal"
+                        VerticalOptions="Center">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
+                            BackgroundColor="#FAFAFA"
+                            BorderColor="#FFFFFF"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+                            <StackLayout Padding="5">
+                                <Image
+                                    Aspect="Fill"
+                                    HeightRequest="120"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/education.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="140" />
+                                <Label
+                                    FontSize="50"
+                                    HorizontalOptions="Center"
+                                    Text="85"
+                                    TextColor="#48C9B0"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="People who received Non Formal Education"
+                                    VerticalOptions="Center"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame
+                            Margin="0"
+                            Padding="0"
+                            BackgroundColor="#FAFAFA"
+                            BorderColor="#FFFFFF"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+                            <StackLayout Padding="5">
+                                <Image
+                                    Aspect="Fill"
+                                    HeightRequest="120"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/camera.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="140" />
+                                <Label
+                                    FontSize="50"
+                                    HorizontalOptions="Center"
+                                    Text="50"
+                                    TextColor="#48C9B0"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="people gained access to Multimedia Training"
+                                    VerticalOptions="Center"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
 
-
-
+                    <StackLayout
+                        Margin="10"
+                        Padding="0"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal"
+                        VerticalOptions="Center">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
+                            BackgroundColor="#FAFAFA"
+                            BorderColor="#FFFFFF"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+                            <StackLayout Padding="5">
+                                <Image
+                                    Aspect="Fill"
+                                    HeightRequest="120"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/tailoring.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="140" />
+                                <Label
+                                    FontSize="50"
+                                    HorizontalOptions="Center"
+                                    Text="17"
+                                    TextColor="#48C9B0"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="People accessed training, in tailoring"
+                                    VerticalOptions="Center"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame
+                            Margin="0"
+                            Padding="0"
+                            BackgroundColor="#FAFAFA"
+                            BorderColor="#FFFFFF"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+                            <StackLayout Padding="5">
+                                <Image
+                                    Aspect="Fill"
+                                    HeightRequest="120"
+                                    HorizontalOptions="Center"
+                                    Source="Assets/tools.png"
+                                    VerticalOptions="Center"
+                                    WidthRequest="140" />
+                                <Label
+                                    FontSize="50"
+                                    HorizontalOptions="Center"
+                                    Text="60"
+                                    TextColor="#48C9B0"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Youth accessed training to Electric Plumbing and Painting"
+                                    VerticalOptions="Center"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
 
                 </StackLayout>
-            </StackLayout>
-        </ScrollView>
 
-    </ContentPage.Content>
-</ContentPage>
+            </ScrollView>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AsalOrigins.DonatePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Donate">
+    <ContentPage.Content>
+
+        <ScrollView Padding="10">
+            <StackLayout>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="25"
+                    Text="To Donate"
+                    TextColor="#009688"
+                    VerticalTextAlignment="Start" />
+                <Label
+                    FontSize="18"
+                    Text="You can donate through our bank account or send using Zaad or Sahal"
+                    VerticalTextAlignment="Start" />
+                <Label FontSize="18" Text="SAHAL: +252906214499 | 490214" />
+                <Label FontSize="18" Text="Asal Origin Account: AMAL BANK 1012254884" />
+                <Label
+                    FontSize="18"
+                    Text="All contributions are very much appreciated."
+                    VerticalTextAlignment="Start" />
+                <StackLayout
+                    Padding="0,30,0,10"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    Spacing="10"
+                    VerticalOptions="Center">
+                    <Button
+                        x:Name="sahal"
+                        BackgroundColor="Accent"
+                        Clicked="Sahal_Clicked"
+                        FontSize="18"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Text="Sahal"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        WidthRequest="200" />
+                    <Button
+                        x:Name="zaad"
+                        BackgroundColor="Accent"
+                        Clicked="Zaad_Clicked"
+                        FontSize="18"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Text="Zaad"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        WidthRequest="200" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

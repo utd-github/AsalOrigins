@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace AsalOrigins
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AboutPage : ContentPage
-	{
-		public AboutPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AboutPage : TabbedPage
+    {
+        public AboutPage()
+        {
+            InitializeComponent();
+        }
+    }
 }

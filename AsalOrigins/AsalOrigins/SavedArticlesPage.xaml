@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="AsalOrigins.HomePage"
+    x:Class="AsalOrigins.SavedArticlesPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Asal Origins">
-
+    Title="Saved Articles">
     <ContentPage.Content>
         <ScrollView Padding="10">
             <Grid>
@@ -14,14 +13,6 @@
                     HorizontalOptions="Center"
                     IsVisible="False"
                     VerticalOptions="Center">
-                    <Button
-                        x:Name="refreshbtn"
-                        BackgroundColor="Accent"
-                        Clicked="Refreshbtn_Clicked"
-                        HorizontalOptions="Center"
-                        Text="Refresh"
-                        TextColor="White"
-                        VerticalOptions="Center" />
                     <Label
                         x:Name="infolabel"
                         HorizontalOptions="Center"
@@ -35,15 +26,13 @@
                     Color="#4D7EE1" />
                 <!--  ListView  -->
                 <ListView
-                    x:Name="PostsList"
-                    Header="Our Latest Posts"
-                    IsPullToRefreshEnabled="True"
-                    ItemSelected="PostsList_ItemSelected"
+                    x:Name="savedPosts"
+                    ItemSelected="SavedPosts_ItemSelected"
                     RowHeight="200">
-
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Height="80">
+
                                 <StackLayout Margin="10" Padding="0">
                                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                         <Label

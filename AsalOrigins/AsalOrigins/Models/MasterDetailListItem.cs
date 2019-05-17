@@ -8,6 +8,7 @@ namespace AsalOrigins.Models
     {
         public string Title { get; set; }
         public string IconSource { get; set; }
+        public string TextColor { get; set; }
         public Type TargetType { get; set; }
     }
 }
